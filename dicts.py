@@ -1,3 +1,5 @@
+from collections import Counter
+
 meu_texto = "Bem vindo meu nome é Wellington, eu gosto muito de cachorros, cachorros são vida"
 meu_texto.split()
 
@@ -38,3 +40,8 @@ for key, valor in aparicoes.items():
 
 print("Concatenando uma palavra para cada nome de chave e jogando numa lista")
 print(["palavra {}".format(chave) for chave in aparicoes.keys()])
+
+
+print("Contadores")
+aparicoes = Counter(meu_texto.split())
+print(aparicoes)
